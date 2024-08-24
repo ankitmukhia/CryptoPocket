@@ -17,8 +17,7 @@ export const getWallet = async (mnemonicPhrase: string) => {
 			},
 			mnemonicPhrase
 		});
-		console.log("data : ", res.data.key)
-		return res.data.key;
+		return res.data;
 	} catch (error) {
 		console.log(error)
 	}
